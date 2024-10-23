@@ -22,3 +22,15 @@ amongst different machines.
 docker build -t interncomp-frontend -f Dockerfile.dev .
 docker run interncomp-frontend
 ```
+
+2. To run docker-compose:
+
+```bash
+docker compose -f docker-compose.dev.yml up
+```
+
+Use `docker compose -f docker-compose.dev.yml down` if needed.
+
+3. Cleanup
+
+`docker image rm interncomp-platform-backend interncomp-platform-frontend postgres:15-alpine`
